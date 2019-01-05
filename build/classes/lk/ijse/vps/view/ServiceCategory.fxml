@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="serviceCatePanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="336.0" style="-fx-background-color: white; -fx-border-color: red; -fx-background-radius: 22; -fx-border-radius: 22;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vps.controller.ServiceCategoryController">
+   <children>
+      <JFXTextField fx:id="txtServiceCategory" labelFloat="true" layoutX="32.0" layoutY="90.0" onAction="#servicecatoNamrAction" prefHeight="25.0" prefWidth="209.0" promptText="Service Category Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddSerCate" layoutX="215.0" layoutY="130.0" onAction="#addService" style="-fx-background-color: green; -fx-background-radius: 22;" text="Add Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtServiceCategoID" labelFloat="true" layoutX="32.0" layoutY="47.0" prefHeight="25.0" prefWidth="209.0" promptText="Service Category ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="imgClose" fitHeight="25.0" fitWidth="36.0" layoutX="284.0" layoutY="14.0" onMouseClicked="#closePanel" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Cancel.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

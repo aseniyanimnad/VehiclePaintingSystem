@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelManageStock" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1115.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.vps.controller.ManageStockController">
+   <children>
+      <JFXTextField fx:id="txtMeterialCode" editable="false" focusColor="#2043ae" labelFloat="true" layoutX="156.0" layoutY="166.0" promptText="Material Code" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBrand" focusColor="#2043ae" labelFloat="true" layoutX="157.0" layoutY="219.0" onAction="#brandAction" prefHeight="25.0" prefWidth="145.0" promptText="Brand" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQTY" focusColor="#2043ae" labelFloat="true" layoutX="503.0" layoutY="166.0" onAction="#qtyAction" promptText="QTY" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtwarrantee" focusColor="#2043ae" labelFloat="true" layoutX="505.0" layoutY="279.0" onAction="#waranteeAction" promptText="Warantee (Months)" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tableStock" layoutX="150.0" layoutY="408.0" onMouseClicked="#onMouseClicked" prefHeight="278.0" prefWidth="844.0">
+        <columns>
+          <TableColumn prefWidth="68.99996948242188" text="M Code" />
+            <TableColumn prefWidth="108.0" text="Brand" />
+            <TableColumn prefWidth="111.0" text="Date" />
+            <TableColumn prefWidth="114.0" text="Description" />
+            <TableColumn prefWidth="117.0" text="Category" />
+            <TableColumn prefWidth="97.0" text="Price" />
+            <TableColumn prefWidth="100.0" text="QTY" />
+            <TableColumn prefWidth="128.0" text="Warantee" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDate" editable="false" layoutX="857.0" layoutY="167.0" prefHeight="25.0" prefWidth="108.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label layoutX="817.0" layoutY="170.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDelete" layoutX="639.0" layoutY="359.0" onAction="#deleteRawMaterial" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: red; -fx-background-radius: 22;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtDescription" focusColor="#2043ae" labelFloat="true" layoutX="157.0" layoutY="279.0" onAction="#descriptionAction" prefHeight="25.0" prefWidth="207.0" promptText="Description" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbMaterialCategory" labelFloat="true" layoutX="503.0" layoutY="219.0" onAction="#searchCategoryName" prefHeight="25.0" prefWidth="187.0" promptText="Category" />
+      <JFXTextField fx:id="txtPrice" focusColor="#2043ae" labelFloat="true" layoutX="816.0" layoutY="279.0" onAction="#priceAction" prefHeight="25.0" prefWidth="120.0" promptText="Price" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="225.0" layoutY="42.0" prefHeight="25.0" prefWidth="665.0" style="-fx-background-radius: 22; -fx-background-color: #cddc39;">
+         <children>
+            <Label layoutX="272.0" layoutY="-1.0" text="Manage Stock">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnRMCategory" layoutX="346.0" layoutY="359.0" onAction="#loadRMCategoryPanel" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #304ffe; -fx-background-radius: 22;" text="Manage Category" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddMaterial" layoutX="517.0" layoutY="359.0" onAction="#addMaterial" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: green; -fx-background-radius: 22;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <TextField fx:id="txtSearchMaterial" layoutX="462.0" layoutY="105.0" onAction="#searchRawMaterial" prefHeight="25.0" prefWidth="287.0" style="-fx-border-color: blue;" />
+      <Label layoutX="333.0" layoutY="110.0" text="Search Raw Material" textFill="#1400f2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtServiceCategoryName" editable="false" layoutX="816.0" layoutY="219.0" promptText="Category Name" />
+   </children>
+</AnchorPane>

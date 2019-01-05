@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customers" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="95d81bc3-6057-45a6-a8c6-c8b628d71207">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#5CB95C">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#CFE6CF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="9da7aa89-d3a8-4d33-b5b9-019146d959b0">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+		<queryString language="SQL">
+			<![CDATA[Select * from Customer]]>
+		</queryString>
+		<field name="CusID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="CusID"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+		</field>
+		<field name="CusNIC" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="CusNIC"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+		</field>
+		<field name="CusName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="CusName"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+		</field>
+		<field name="CusTel" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="CusTel"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+		</field>
+		<group name="CusID">
+			<groupExpression><![CDATA[$F{CusID}]]></groupExpression>
+		</group>
+		<group name="CusNIC">
+			<groupExpression><![CDATA[$F{CusNIC}]]></groupExpression>
+		</group>
+		<group name="CusName">
+			<groupExpression><![CDATA[$F{CusName}]]></groupExpression>
+		</group>
+		<group name="CusTel">
+			<groupExpression><![CDATA[$F{CusTel}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[Select * from Customer]]>
+	</queryString>
+	<field name="CusID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CusID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="CusNIC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CusNIC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="CusName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CusName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<field name="CusTel" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="CusTel"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="customer"/>
+	</field>
+	<group name="CusID">
+		<groupExpression><![CDATA[$F{CusID}]]></groupExpression>
+	</group>
+	<group name="CusNIC">
+		<groupExpression><![CDATA[$F{CusNIC}]]></groupExpression>
+	</group>
+	<group name="CusName">
+		<groupExpression><![CDATA[$F{CusName}]]></groupExpression>
+	</group>
+	<group name="CusTel">
+		<groupExpression><![CDATA[$F{CusTel}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="75" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="142" height="50" uuid="474803a6-ee35-4b3e-aecb-84baceceedd7"/>
+				<imageExpression><![CDATA["E:/Project Needs/Title.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="30" width="142" height="30" uuid="672160c8-8bdf-4b8b-9c06-9445cda4d5a2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="231" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="15" width="550" height="150" uuid="d74f1060-af32-4661-bbc2-e30d44f36853">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="cb4e85f3-ad11-4e3c-a3ce-68123f658fc7">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="7bf224e3-b8c2-48cb-a03e-6c9f5098c3c2">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="0d9a4524-f52b-42a8-b989-5d78684ef27b"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CusID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="b5476a69-50ab-403b-929c-ea58a078c428"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CusID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="140" uuid="aa730127-18c5-4b22-88e3-2ea90aa78491">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="30" uuid="fa0994f3-15e9-4bda-8b85-fb42d28d118e"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CusNIC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="140" height="30" uuid="6922251e-6c28-4507-aa21-b0ca217a05ee"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CusNIC}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="150" uuid="043a6a18-2571-4cf7-8029-536a73d492a9">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="150" height="30" uuid="a20d1356-b3cc-4ddf-b825-7efafbd428b5"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CusName]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="150" height="30" uuid="5bad01a3-951e-4e4b-a2db-31263c3872d5"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CusName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="160" uuid="c3825e2a-5ea9-4da6-b763-7a4f67d6d7f1">
+						<jr:tableHeader style="Table_TH" height="30"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="160" height="30" uuid="d7262ffc-9d0f-4ec1-9c94-933de73846cb"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CusTel]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="160" height="30" uuid="7a814486-f24d-46b8-9387-5733cd143b4d"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CusTel}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

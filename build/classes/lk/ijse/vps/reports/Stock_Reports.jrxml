@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Stock_Reports" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9d2042d3-b38a-4441-83ee-e6cd217fa3cc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="008f810b-8ddd-41d9-a517-4bd3aefbda05">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+		<queryString language="SQL">
+			<![CDATA[Select * from RawMaterial]]>
+		</queryString>
+		<field name="RCode" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="RCode"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Brand" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Brand"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Date"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Description" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Description"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Category" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Category"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Price" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="Price"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="RQTY" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="RQTY"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<field name="Warantee" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Warantee"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+		</field>
+		<group name="RCode">
+			<groupExpression><![CDATA[$F{RCode}]]></groupExpression>
+		</group>
+		<group name="Brand">
+			<groupExpression><![CDATA[$F{Brand}]]></groupExpression>
+		</group>
+		<group name="Date">
+			<groupExpression><![CDATA[$F{Date}]]></groupExpression>
+		</group>
+		<group name="Description">
+			<groupExpression><![CDATA[$F{Description}]]></groupExpression>
+		</group>
+		<group name="Category">
+			<groupExpression><![CDATA[$F{Category}]]></groupExpression>
+		</group>
+		<group name="Price">
+			<groupExpression><![CDATA[$F{Price}]]></groupExpression>
+		</group>
+		<group name="RQTY">
+			<groupExpression><![CDATA[$F{RQTY}]]></groupExpression>
+		</group>
+		<group name="Warantee">
+			<groupExpression><![CDATA[$F{Warantee}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[Select * from RawMaterial]]>
+	</queryString>
+	<field name="RCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="RCode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Brand" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Brand"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Category" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Category"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="RQTY" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="RQTY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<field name="Warantee" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Warantee"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rawmaterial"/>
+	</field>
+	<group name="RCode">
+		<groupExpression><![CDATA[$F{RCode}]]></groupExpression>
+	</group>
+	<group name="Brand">
+		<groupExpression><![CDATA[$F{Brand}]]></groupExpression>
+	</group>
+	<group name="Date">
+		<groupExpression><![CDATA[$F{Date}]]></groupExpression>
+	</group>
+	<group name="Description">
+		<groupExpression><![CDATA[$F{Description}]]></groupExpression>
+	</group>
+	<group name="Category">
+		<groupExpression><![CDATA[$F{Category}]]></groupExpression>
+	</group>
+	<group name="Price">
+		<groupExpression><![CDATA[$F{Price}]]></groupExpression>
+	</group>
+	<group name="RQTY">
+		<groupExpression><![CDATA[$F{RQTY}]]></groupExpression>
+	</group>
+	<group name="Warantee">
+		<groupExpression><![CDATA[$F{Warantee}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="10" width="210" height="40" uuid="d47eea30-9ca1-42fd-a266-0760129a6954"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="140" splitType="Stretch">
+			<componentElement>
+				<reportElement x="-10" y="0" width="570" height="122" uuid="5df45dcd-0652-4926-8c3e-d0fa7d602f2a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="060cb56e-259a-4e9e-a8bf-9e0ee422a627">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="50" uuid="16a17889-60ee-4399-93b0-203fda69aa6b">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="50" height="30" uuid="397ba205-7e85-4545-a7e9-159c26c1549c"/>
+								<text><![CDATA[RCode]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="50" height="30" uuid="4ae4ab6b-6bca-4c4e-9166-44c532667b78"/>
+								<textFieldExpression><![CDATA[$F{RCode}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="82107200-b0c8-4004-8938-68da13400702">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="9755f3a3-8d1a-41d9-bd01-1dec0735d82a"/>
+								<text><![CDATA[Brand]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="511db38e-1300-4531-b5e1-2925da2e447d"/>
+								<textFieldExpression><![CDATA[$F{Brand}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="8ac23459-1085-4bdf-9b41-58fd3be63f12">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="0f912e9b-56af-40f7-8439-65c02ce61146"/>
+								<text><![CDATA[Date]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="b6cf50f8-66b9-4277-8375-5ad6ad36b449"/>
+								<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="026870ae-fc02-44ad-a5de-6fd3a9ec7fd3">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="04167b10-2d43-40d0-8835-43a78d02b178"/>
+								<text><![CDATA[Description]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="047df0ad-2a40-43c5-9850-f368735bc493"/>
+								<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="79a1e6fd-feb0-4b82-8185-5b81f730b81d">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="00786afa-5901-4eca-973d-f07e397d1260"/>
+								<text><![CDATA[Category]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="aa917b40-6a91-4151-938a-15f97b0d6ff9"/>
+								<textFieldExpression><![CDATA[$F{Category}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="6f706237-b47d-4a65-b9e4-bd67b9aed4db">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="e95768e7-3204-4e63-b4dc-98a27576ab37"/>
+								<text><![CDATA[Price]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="e10ec5a3-2966-476d-9706-a023890d9385"/>
+								<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="7e01c1aa-1c52-4987-8512-5c805505bd38">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="b926c607-21b5-4b0b-8cc9-45f64d56d44a"/>
+								<text><![CDATA[RQTY]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="bd0568c3-5325-4972-a7e6-73037c1d3790"/>
+								<textFieldExpression><![CDATA[$F{RQTY}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="80" uuid="620c29be-2ef0-45c8-9417-bea604a32b98">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="80" height="30" uuid="60c73e23-2e0f-4681-9f48-4cf512953741"/>
+								<text><![CDATA[Warantee]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="80" height="30" uuid="a075fcb0-2c5f-4a24-a5bc-bde252612f1a"/>
+								<textFieldExpression><![CDATA[$F{Warantee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

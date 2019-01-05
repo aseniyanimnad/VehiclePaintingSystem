@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Appointments" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fadff959-e8b8-478d-98e2-f218420a39de">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="b21f7471-605b-4529-aa4c-15d2e9b65d75">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Vehicle Paintin System"/>
+		<queryString language="SQL">
+			<![CDATA[select * from Appointments]]>
+		</queryString>
+		<field name="AID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="AID"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+		</field>
+		<field name="ADate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ADate"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+		</field>
+		<field name="Advance" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.label" value="Advance"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+		</field>
+		<field name="CusID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="CusID"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+		</field>
+		<group name="AID">
+			<groupExpression><![CDATA[$F{AID}]]></groupExpression>
+		</group>
+		<group name="ADate">
+			<groupExpression><![CDATA[$F{ADate}]]></groupExpression>
+		</group>
+		<group name="Advance">
+			<groupExpression><![CDATA[$F{Advance}]]></groupExpression>
+		</group>
+		<group name="CusID">
+			<groupExpression><![CDATA[$F{CusID}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from Appointments]]>
+	</queryString>
+	<field name="AID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="AID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+	</field>
+	<field name="ADate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ADate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+	</field>
+	<field name="Advance" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="Advance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+	</field>
+	<field name="CusID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CusID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="appointments"/>
+	</field>
+	<group name="AID">
+		<groupExpression><![CDATA[$F{AID}]]></groupExpression>
+	</group>
+	<group name="ADate">
+		<groupExpression><![CDATA[$F{ADate}]]></groupExpression>
+	</group>
+	<group name="Advance">
+		<groupExpression><![CDATA[$F{Advance}]]></groupExpression>
+	</group>
+	<group name="CusID">
+		<groupExpression><![CDATA[$F{CusID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="198" y="30" width="168" height="30" uuid="c4bfca15-f3c5-4786-a000-69825d43cf2a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Appointments]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="239" splitType="Stretch">
+			<componentElement>
+				<reportElement x="20" y="20" width="524" height="120" uuid="d2548f15-4e53-411d-83fe-76ec9b1c52e2">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="dc6cab80-f230-4eed-bddd-0541771564f4">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="c6540fc5-793a-4fe1-88ba-4f5d778c2706">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="a7d8ae18-cebf-4fba-a233-367f0572a42b"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[AID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="30" uuid="82fd06a3-5476-4dd8-b91a-c49e659eba60"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{AID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="120" uuid="d2e5f848-296c-4c05-b136-de361e73f122">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="120" height="30" uuid="d4fc7947-ced6-41ec-94ee-7145230d18ca"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[ADate]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="120" height="30" uuid="b17e58f6-b9e7-44f3-9385-946bf448c481"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ADate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="160" uuid="feac12db-01fe-43c0-9d7d-3ad1a8005413">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="160" height="30" uuid="a0e2ac08-8b48-488e-b400-6c394496d886"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[Advance]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="160" height="30" uuid="37b0773c-a42e-4427-85f6-1db540166277"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{Advance}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="154" uuid="7cf7c899-4adc-4fcf-a4b8-55c884574490">
+						<jr:tableHeader style="Table_TH" height="2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="154" height="30" uuid="e6679d99-4593-496a-814c-68bf61ab081d"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CusID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="154" height="30" uuid="1958ecbf-fa6c-45fc-92ad-ad20ab982108"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CusID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
